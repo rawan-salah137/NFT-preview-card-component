@@ -1,0 +1,164 @@
+body {
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    flex-direction: column;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.container {
+    width: 300px;
+    background-color: hsl(216, 50%, 16%);
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.image {
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.image .fa-eye{
+    color: white;
+    position: absolute;
+    left: 44%;
+    bottom: 43%;
+    font-size: 40px;
+    display: none;
+}
+
+.image img {
+    margin: 10px;
+    width: 250px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: relative;
+}
+
+.image .hover {
+    background-color: hsla(178, 83%, 47%, 0.375);
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    width: 257px;
+    height: 242px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.image:hover .fa-eye,
+.fa-eye:hover {
+    display: block;
+    cursor: pointer;
+}
+
+.image:hover  .hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.image:hover  img {
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.title {
+    color: white;
+    font-size: 13px;
+    margin: -15px 20px;
+    font-weight: 600;
+}
+
+.title:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.p {
+    color: hsl(215, 51%, 70%);
+    margin: 0 20px;
+}
+
+.sub {
+    display: flex;
+    justify-content: space-between;
+}
+.one {
+    color: hsl(178, 100%, 50%);
+    position: relative;
+    margin-left: 10px;
+}
+
+.one .colored {
+    margin-left: 15px;
+    font-weight: 300;
+}
+
+.one .fa-ethereum {
+    position: absolute;
+    bottom: 23px;
+}
+
+.two {
+    color: hsl(215, 51%, 70%);
+    position: relative;
+}
+
+.two h3 {
+    font-weight: 300;
+    margin-right: 20px;
+}
+
+.two .fa-clock {
+    position: absolute;
+    left: -22px;
+    bottom:22px;
+}
+
+hr {
+    width: 275px;
+    background-color: hsl(215, 51%, 70%);
+    border: none;
+    height: 0.5px;
+}
+
+.creation {
+    display: flex;
+
+}
+
+.creation .avatar {
+    width: 45px;
+    margin: 15px 20px 10px 15px;
+}
+
+.creation h4 {
+    color: hsl(215, 51%, 70%);
+    font-family: 300;
+}
+
+span {
+    color: white;
+}
+
+span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
